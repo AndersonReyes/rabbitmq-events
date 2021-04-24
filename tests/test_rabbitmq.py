@@ -1,4 +1,4 @@
-from events.rabbitmqclient import RabbitMQEventsClient
+from rabbitmq_events.rabbitmqclient import RabbitMQEventsClient
 
 import pytest
 import uuid

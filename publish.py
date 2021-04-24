@@ -1,4 +1,4 @@
-from events.rabbitmqclient import RabbitMQEventsClient
+from rabbitmq_events import RabbitMQEventsClient
 import sys
 import json
 
