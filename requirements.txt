@@ -1,1 +1,6 @@
 pika
+
+# test deps
+black
+flake8
+pytest
