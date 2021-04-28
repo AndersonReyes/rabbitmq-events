@@ -4,6 +4,11 @@ services:
   rabbit:
     image: rabbitmq:3.8-management-alpine
     container_name: "rabbitmq"
+    healthcheck:
+      test: rabbitmq-diagnostics -q ping
+      interval: 5s
+      timeout: 10s
+      retries: 3
     ports:
       - 5672:5672
       - 15672:15672
